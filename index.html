@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game!</h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing buttons.
+    </p>
+    <div id="menuButtons">
+      <button id="startBtn" onclick="startGame()">
+      Start
+      </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+      </button>
+    </div>
+    
+    <div id="guessDisplay">
+      <p id="guessTitle">
+        Guesses Left: 
+      </p>
+      <p id="guesses"></p>
+    </div>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone(1)"><img id="btn1" class="hidden" src="https://cdn.glitch.com/6837bb27-5702-459a-9608-813bc0a5f277%2FBcgE88XLi.jpg?v=1616371518217" alt="Good Job" width="150" height="150"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone(2)"><img id="btn2" class="hidden" src="https://cdn.glitch.com/6837bb27-5702-459a-9608-813bc0a5f277%2F8iAEyyygT.png?v=1616371547303" alt="Good Job" width="150" height="150"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone(3)"><img id="btn3" class="hidden" src="https://cdn.glitch.com/6837bb27-5702-459a-9608-813bc0a5f277%2FBcgE88XLi.jpg?v=1616371518217" alt="Good Job" width="150" height="150"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone(4)"><img id="btn4" class="hidden" src="https://cdn.glitch.com/6837bb27-5702-459a-9608-813bc0a5f277%2F8iAEyyygT.png?v=1616371547303" alt="Good Job" width="150" height="150"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone(5)"><img id="btn5" class="hidden" src="https://cdn.glitch.com/6837bb27-5702-459a-9608-813bc0a5f277%2FBcgE88XLi.jpg?v=1616371518217" alt="Good Job" width="150" height="150"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone(6)"><img id="btn6" class="hidden" src="https://cdn.glitch.com/6837bb27-5702-459a-9608-813bc0a5f277%2F8iAEyyygT.png?v=1616371547303" alt="Good Job" width="150" height="150"></button>
+    </div>
+  </body>
+</html>

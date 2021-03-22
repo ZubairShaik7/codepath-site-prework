@@ -1,0 +1,92 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-image: linear-gradient(45deg, red, blue);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-style: oblique;
+  color: #373fff;
+  font-family: verdana, arial, sans-serif;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 5px;
+  border-width: 5px;
+  border-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+}
+
+#button2 {
+  background: lightblue;
+}
+
+#button3 {
+  background: pink;
+}
+
+#button4 {
+  background: lightyellow;
+}
+
+#button5 {
+  background: violet;
+}
+
+#button6 {
+  background: darksalmon;
+}
+
+#button1:active, #button1.lit {
+  background:green;
+}
+
+#button2:active, #button2.lit {
+  background:blue;
+}
+
+#button3:active, #button3.lit {
+  background:red;
+}
+
+#button4:active, #button4.lit {
+  background:yellow;
+}
+
+#button5:active, #button5.lit {
+  background:darkmagenta;
+}
+
+#button6:active, #button6.lit {
+  background:darkorange;
+}
+
+#guesses , #guessTitle {
+  float:left;
+}
+
+#guessDisplay {
+  display: inline-block;
+  border-width: 5px;
+  border-color: black;
+}
